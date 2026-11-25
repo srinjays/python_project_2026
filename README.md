@@ -3,7 +3,7 @@
 This repository contains the official Python implementation and experimental results for the research paper:
 
 > **A Comparative Study of Transformer-Based and Conventional Machine Learning Models for Network Intrusion Detection**  
-> *Srinjay Singh, S Shivapriyaa, Chinivas Rao Lachireaddy, and Suriya Prakash J*  
+> *Srinjay Singh, S Shivapriyaa, Veera Srinivasa Rao Lachireaddy, and Suriya Prakash J*  
 > Department of Computer Science and Engineering, JAIN (Deemed-to-be-University), Bengaluru, India
 
 ---
@@ -107,8 +107,6 @@ $$\mathbf{C} = \frac{1}{n - 1}(\mathbf{X} - \mathbf{1}\boldsymbol{\mu}^\top)^\to
 | **Multilayer Perceptron** | `pca_mpnn_` | PCA ($k = 5, 10, 15$) | `MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=500, random_state=42)` |
 | **Random Forest** | `pca_rf_` | All 78 features | `RandomForestClassifier(n_estimators=k, criterion='entropy', random_state=0)` ($k = 5, 10, 15$) |
 
-For the two continuous regression models, continuous predictions $f(\mathbf{z})$ are converted into valid discrete class indices via:
-$$\hat{y} = \min\big\{\max\{\text{round}(f(\mathbf{z})),\, y_{\min}\},\, y_{\max}\big\}$$
 
 ---
 
